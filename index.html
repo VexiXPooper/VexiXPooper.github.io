@@ -1,0 +1,463 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="/images/logo.png" alt="Vexi X Community Logo" />
+    </div>
+    <div class="nav-center">
+        <a class="nav-link" href="#store">Products</a>
+        <a class="nav-link" href="#socials">Socials</a>
+    </div>
+    <div class="nav-right">
+        <button id="statusBtn" class="nav-link">Status</button>
+    </div>
+</nav>
+
+<div class="search-container">
+    <h1 class="page-header">Vexi X Community</h1>
+    <input type="search" id="searchInput" placeholder="Search for products" />
+</div>
+
+<div class="info-box flex-info-box">
+    <div class="info-left">
+        <h2>About us</h2>
+        <p>
+            Vexi X Community<br />
+            provides quality but<br />
+            simple cheats for a<br />
+            small community<br />
+            <small style="font-weight: normal; font-size: 10px; color: #aaa;">
+                Trusted by users worldwide
+            </small>
+        </p>
+    </div>
+    <div class="divider"></div>
+    <div class="info-right">
+        <div class="info-item">
+            <img class="icon" src="/images/update-logo.png" alt="Update logo" />
+            <div>
+                <h3>Constant updates</h3>
+                <p>Keeping cheats fresh and undetectable</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <img class="icon" src="/images/selection-logo.png" alt="Selection logo" />
+            <div>
+                <h3>Easy Usage</h3>
+                <p>User-friendly with one click launch</p>
+            </div>
+        </div>
+        <div class="info-item">
+            <img class="icon" src="/images/quality-logo.png" alt="Quality logo" />
+            <div>
+                <h3>High to Mid Quality</h3>
+                <p>Optimized cheats for best experience</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="store" class="store-section">
+    <h2 class="store-title">Store</h2>
+    <p class="store-description">Experience games differently with our products</p>
+
+    <div class="product-row">
+        <div class="product-box" id="roblox-executor-scripts" data-product-title="Roblox Executor/Scripts" data-product-price="Free" data-product-image="/images/roblox.png" tabindex="0">
+            <img class="product-image" src="/images/roblox.png" alt="Roblox Executor/Scripts" />
+            <h3 class="product-title">Roblox Executor/Scripts</h3>
+            <p class="product-price">Price: <span style="color: #00ff00;">Free</span></p>
+        </div>
+
+        <div class="product-box" id="one-armed-robber-menu" data-product-title="One Armed Robber Menu" data-product-price="Free" data-product-image="/images/onearmedrobber.png" tabindex="0">
+            <img class="product-image" src="/images/onearmedrobber.png" alt="One Armed Robber Menu" />
+            <h3 class="product-title">One Armed Robber Menu</h3>
+            <p class="product-price">Price: <span style="color: #00ff00;">Free</span></p>
+        </div>
+
+        <div class="product-box" id="spoofers" data-product-title="Spoofers" data-product-price="Free" data-product-image="/images/spoofers.png" tabindex="0">
+            <img class="product-image" src="/images/spoofers.png" alt="Spoofers" />
+            <h3 class="product-title">Spoofers</h3>
+            <p class="product-price">Price: <span style="color: #00ff00;">Free</span></p>
+        </div>
+
+        <div class="product-box" id="cracked-clients" data-product-title="Cracked Clients" data-product-price="Free" data-product-image="/images/crackedclients.png" tabindex="0">
+            <img class="product-image" src="/images/crackedclients.png" alt="Cracked Clients" />
+            <h3 class="product-title">Cracked Clients</h3>
+            <p class="product-price">Price: <span style="color: #00ff00;">Free</span></p>
+        </div>
+
+        <div class="product-box" id="bypassed-methods" data-product-title="Bypassed Methods" data-product-price="Free" data-product-image="/images/bypassedmethods.png" tabindex="0">
+            <img class="product-image" src="/images/bypassedmethods.png" alt="Bypassed Methods" />
+            <h3 class="product-title">Bypassed Methods</h3>
+            <p class="product-price">Price: <span style="color: #00ff00;">Free</span></p>
+        </div>
+
+        <div class="product-box" id="fortnite-cheat" data-product-title="Fortnite Cheat" data-product-price="Free" data-product-image="/images/fortnitecheat.png" tabindex="0">
+            <img class="product-image" src="/images/fortnitecheat.png" alt="Fortnite Cheat" />
+            <h3 class="product-title">Fortnite Cheat</h3>
+            <p class="product-price">Price: <span style="color: #00ff00;">Free</span></p>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="store-section">
+    <h2 class="store-title">FAQ</h2>
+    <p class="store-description">Here are some of the most frequently asked questions about our products</p>
+
+    <div class="faq-container">
+        <div class="faq-row">
+            <div class="faq-dropdown info-box">
+                <div class="faq-question">
+                    <h3>Which platforms are supported?</h3>
+                    <span class="dropdown-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We officially support Windows 10 and Windows 11.</p>
+                </div>
+            </div>
+            <div class="faq-dropdown info-box">
+                <div class="faq-question">
+                    <h3>Is my personal data safe?</h3>
+                    <span class="dropdown-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We value your privacy and will never collect or share your personal data with third parties. Our tools gather only the minimal information required for the product to function. Your private details are never used in this process.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-row">
+            <div class="faq-dropdown info-box">
+                <div class="faq-question">
+                    <h3>Is the software safe to use?</h3>
+                    <span class="dropdown-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, the software is generally safe to use. You can always check its current status on our Status Page. If any issues arise, our experienced team will work to resolve them as quickly as possible.</p>
+                </div>
+            </div>
+            <div class="faq-dropdown info-box">
+                <div class="faq-question">
+                    <h3>How can I report a problem?</h3>
+                    <span class="dropdown-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can report any issues directly on our Discord server. Our team monitors it and will assist you as soon as possible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="socials" class="store-section">
+    <h2 class="store-title">Socials</h2>
+    <p class="store-description">Follow Or Join our Socials</p>
+
+    <div class="info-box flex-info-box" style="max-width: 600px; flex-direction: column; align-items: center;">
+        <div class="social-buttons" style="display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+            <div class="social-item">
+                <a href="https://discord.gg/mvrWXg5uu9" target="_blank" rel="noopener noreferrer" title="Discord">
+                    <img src="/images/discord.png" alt="Discord" class="social-icon" />
+                </a>
+                <span class="social-label">Discord</span>
+            </div>
+
+            <div class="social-item">
+                <div class="social-group">
+                    <a href="@( "https://www.tiktok.com/@pooperschw4rtz" )" target="_blank" rel="noopener noreferrer" title="TikTok pooperschw4rtz">
+                        <img src="/images/tiktok.png" alt="TikTok pooperschw4rtz" class="social-icon" />
+                    </a>
+                    <a href="https://guns.lol/pooper" target="_blank" rel="noopener noreferrer" title="Guns.lol pooper">
+                        <img src="/images/gunslol.png" alt="Guns.lol pooper" class="social-icon" />
+                    </a>
+                </div>
+                <span class="social-label">Pooper</span>
+            </div>
+
+            <div class="social-item">
+                <div class="social-group">
+                    <a href="@( "https://www.tiktok.com/@skrrrt_r?_t=ZS-8ymcZwPwc4u&_r=1" )" target="_blank" rel="noopener noreferrer" title="TikTok skrrrt_r">
+                        <img src="/images/tiktok.png" alt="TikTok skrrrt_r" class="social-2icon" />
+                    </a>
+                    <a href="https://guns.lol/skrrrt_r" target="_blank" rel="noopener noreferrer" title="Guns.lol skrrrt_r">
+                        <img src="/images/gunslol.png" alt="Guns.lol skrrrt_r" class="social-icon" />
+                    </a>
+                </div>
+                <span class="social-label">Skrrrt</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="productOverlay" class="overlay">
+    <div class="overlay-content">
+        <button id="closeOverlayBtn" class="close-btn">&times;</button>
+        <div class="overlay-box">
+            <div class="overlay-left">
+                <img id="overlayProductImage" class="overlay-product-image" src="" alt="Product Image" />
+                <h3 id="overlayProductTitle" class="overlay-product-title"></h3>
+                <p id="overlayProductPrice" class="overlay-product-price"></p>
+            </div>
+            <div class="divider"></div>
+            <div class="overlay-right">
+                <div class="overlay-right-content">
+                    <p class="overlay-description">
+                        This item can only be downloaded from joining the discord From Socials or The button below.
+                    </p>
+                    <a href="https://discord.gg/mvrWXg5uu9" target="_blank" rel="noopener noreferrer" class="discord-button">
+                        <svg class="discord-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.35 96.59">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }</style>
+                            </defs>
+                            <title>discord-logo</title>
+                            <path class="cls-1" d="M107.28,7.94c-9.17-5.74-18.45-8.52-27.91-8.08-1.07.05-1.9,1.14-2.73,2.46-.22.33-.44.66-.66.99-1.92,3.31-3.69,6.5-5.23,9.5-6.52-1-12.87-1-19.16,0-1.54-3-3.3-6.19-5.23-9.5-.22-.33-.44-.66-.66-.99-.83-1.32-1.66-2.41-2.73-2.46-9.46-.44-18.74,2.34-27.91,8.08C3.89,17.44-1.67,31.27,1.14,45.88a99.4,99.4,0,0,0,10.6,26.78c1.33,2.5,2.77,5,4.3,7.35,11.2,17.15,22.84,23.3,34.42,17.38a.29.29,0,0,0,.08-.12c.11-.23.23-.46.36-.69,1.48-2.61,3.13-5,4.86-7.14,2.38-2.89,5.08-5.76,8-8.52a.15.15,0,0,1,.13-.15c1.47,0,3,0,4.5,0a.15.15,0,0,1,.13.15c2.92,2.76,5.62,5.63,8,8.52,1.73,2.15,3.38,4.53,4.86,7.14.13.23.25.46.36.69a.29.29,0,0,0,.08.12c11.58,5.92,23.22-.23,34.42-17.38,1.53-2.35,2.97-4.85,4.3-7.35,10.6-14.61,4.86-28.44-6.38-37.94ZM44.22,60.59c-6.85,0-12.4-6.14-12.4-13.7s5.55-13.7,12.4-13.7c6.85,0,12.4,6.14,12.4,13.7S51.07,60.59,44.22,60.59Zm38.91,0c-6.85,0-12.4-6.14-12.4-13.7s5.55-13.7,12.4-13.7c6.85,0,12.4,6.14,12.4,13.7S90,60.59,83.13,60.59Z" />
+                        </svg>
+                        Join The Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="searchPopup" class="custom-popup-overlay">
+    <div class="custom-popup-content">
+        <button id="closeSearchPopupBtn" class="close-btn">&times;</button>
+        <p id="searchPopupText" class="custom-popup-text"></p>
+    </div>
+</div>
+
+<div id="statusOverlay" class="overlay">
+    <div class="status-overlay-box">
+        <button id="closeStatusOverlayBtn" class="close-btn">&times;</button>
+        <h2>Product Status</h2>
+        <ul id="statusList" class="status-list">
+        </ul>
+    </div>
+</div>
+
+<script>
+    // --- Centralized scroll management functions ---
+    const disableBodyScroll = () => {
+        document.body.style.overflow = 'hidden';
+    };
+
+    const enableBodyScroll = () => {
+        document.body.style.overflow = 'auto';
+    };
+
+    // New function for smooth scrolling to sections
+    const scrollToSection = (e) => {
+        e.preventDefault();
+        const targetId = e.currentTarget.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    // Add event listeners to the Products and Socials links
+    document.querySelectorAll('.navbar .nav-link').forEach(link => {
+        if (link.getAttribute('href') && link.getAttribute('href').startsWith('#')) {
+            link.addEventListener('click', scrollToSection);
+        }
+    });
+
+    // **Status Overlay Functionality**
+    const statusOverlay = document.getElementById('statusOverlay');
+    const closeStatusOverlayBtn = document.getElementById('closeStatusOverlayBtn');
+    const statusList = document.getElementById('statusList');
+
+    const productStatuses = [
+        { name: 'Roblox Executor', status: 'Online' },
+        { name: 'One Armed Robber Menu', status: 'Online' },
+        { name: 'Spoofers', status: 'Online' },
+        { name: 'Cracked Clients', status: 'Online' },
+        { name: 'Bypassed Methods', status: 'Online' },
+        { name: 'Fortnite Cheat', status: 'Offline' },
+    ];
+
+    const showStatusOverlay = () => {
+        statusList.innerHTML = '';
+        productStatuses.forEach(item => {
+            const statusItem = document.createElement('li');
+            statusItem.classList.add('status-item');
+
+            const statusIndicator = document.createElement('span');
+            statusIndicator.classList.add('status-indicator');
+
+            const statusName = document.createElement('span');
+            statusName.classList.add('status-name');
+            statusName.textContent = item.name;
+
+            const statusText = document.createElement('span');
+            statusText.classList.add('status-text');
+            statusText.textContent = item.status;
+
+            if (item.status === 'Offline') {
+                statusIndicator.classList.add('offline');
+                statusText.classList.add('offline');
+            }
+
+            statusItem.appendChild(statusIndicator);
+            statusItem.appendChild(statusName);
+            statusItem.appendChild(statusText);
+            statusList.appendChild(statusItem);
+        });
+
+        statusOverlay.style.display = 'flex';
+        disableBodyScroll();
+    };
+
+    const hideStatusOverlay = () => {
+        statusOverlay.style.display = 'none';
+        enableBodyScroll();
+    };
+
+    document.getElementById('statusBtn').addEventListener('click', showStatusOverlay);
+    closeStatusOverlayBtn.addEventListener('click', hideStatusOverlay);
+    statusOverlay.addEventListener('click', (event) => {
+        if (event.target === statusOverlay) {
+            hideStatusOverlay();
+        }
+    });
+
+
+    // FAQ dropdowns
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.dropdown-icon');
+
+            button.classList.toggle('active');
+
+            if (button.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = '-';
+            } else {
+                answer.style.maxHeight = '0';
+                icon.textContent = '+';
+            }
+        });
+    });
+
+    // Custom Search Popup functionality
+    const searchPopup = document.getElementById('searchPopup');
+    const searchPopupText = document.getElementById('searchPopupText');
+    const closeSearchPopupBtn = document.getElementById('closeSearchPopupBtn');
+
+    const showSearchPopup = (message) => {
+        searchPopupText.textContent = message;
+        searchPopup.style.display = 'flex';
+        disableBodyScroll();
+    };
+
+    const hideSearchPopup = () => {
+        searchPopup.style.display = 'none';
+        enableBodyScroll();
+    };
+
+    closeSearchPopupBtn.addEventListener('click', hideSearchPopup);
+    searchPopup.addEventListener('click', (event) => {
+        if (event.target === searchPopup) {
+            hideSearchPopup();
+        }
+    });
+
+    // Search bar functionality
+    document.getElementById('searchInput').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            const searchValue = event.target.value.trim().toLowerCase();
+            const productBoxes = document.querySelectorAll('.product-box');
+            let found = false;
+
+            if (searchValue === '') {
+                showSearchPopup('Please enter a product name to search.');
+                return;
+            }
+
+            productBoxes.forEach(box => {
+                const productTitle = box.getAttribute('data-product-title').toLowerCase();
+                if (productTitle.includes(searchValue)) {
+                    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                showSearchPopup(`No products found with the name "${searchValue}".`);
+            }
+        }
+    });
+
+    // Product Overlay functionality
+    const productOverlay = document.getElementById('productOverlay');
+    const closeOverlayBtn = document.getElementById('closeOverlayBtn');
+
+    const showProductOverlay = (title, price, imageSrc) => {
+        document.getElementById('overlayProductTitle').textContent = title;
+        document.getElementById('overlayProductPrice').innerHTML = `Price: <span style="color: #00ff00;">${price}</span>`;
+        document.getElementById('overlayProductImage').src = imageSrc;
+
+        productOverlay.style.display = 'flex';
+        disableBodyScroll();
+    };
+
+    const hideProductOverlay = () => {
+        productOverlay.style.display = 'none';
+        enableBodyScroll();
+    };
+
+    closeOverlayBtn.addEventListener('click', hideProductOverlay);
+    productOverlay.addEventListener('click', (event) => {
+        if (event.target === productOverlay) {
+            hideProductOverlay();
+        }
+    });
+
+    document.querySelectorAll('.product-box').forEach(box => {
+        box.addEventListener('click', () => {
+            const title = box.getAttribute('data-product-title');
+            const price = box.getAttribute('data-product-price');
+            const imageSrc = box.getAttribute('data-product-image');
+            showProductOverlay(title, price, imageSrc);
+        });
+    });
+
+    // Starfield generation script
+    const starfield = document.querySelector('.starfield');
+    const starCount = 100;
+    function randomRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+    function createStar() {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        // Random size class
+        const sizeRand = Math.random();
+        if (sizeRand < 0.4) star.classList.add('small');
+        else if (sizeRand < 0.75) star.classList.add('medium');
+        else star.classList.add('large');
+        // Random position
+        star.style.left = `${randomRange(0, 100)}vw`;
+        star.style.top = `${randomRange(0, 100)}vh`;
+        // Random animation duration (slightly randomized)
+        const animDuration = randomRange(30, 90);
+        star.style.animationDuration = `${animDuration}s`;
+        starfield.appendChild(star);
+    }
+    for(let i = 0; i < starCount; i++) {
+        createStar();
+    }
+</script>
