@@ -493,3 +493,36 @@
             box.addEventListener('click', () => {
                 const title = box.getAttribute('data-product-title');
                 const price = box.getAttribute('data-product-price');
+                const imageSrc = box.getAttribute('data-product-image');
+                showProductOverlay(title, price, imageSrc);
+            });
+        });
+
+        // Starfield generation script
+        const starfield = document.querySelector('.starfield');
+        const starCount = 100;
+        function randomRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            // Random size class
+            const sizeRand = Math.random();
+            if (sizeRand < 0.4) star.classList.add('small');
+            else if (sizeRand < 0.75) star.classList.add('medium');
+            else star.classList.add('large');
+            // Random position
+            star.style.left = `${randomRange(0, 100)}vw`;
+            star.style.top = `${randomRange(0, 100)}vh`;
+            // Random animation duration (slightly randomized)
+            const animDuration = randomRange(30, 90);
+            star.style.animationDuration = `${animDuration}s`;
+            starfield.appendChild(star);
+        }
+        for(let i = 0; i < starCount; i++) {
+            createStar();
+        }
+    </script>
+</body>
+</html>
